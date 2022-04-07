@@ -1,3 +1,6 @@
+import "cypress-iframe";
+import "./comandos/botoes";
+import "./comandos/iframe";
 import "./cenarios/cenário1";
 import "./cenarios/cenário2";
 import "./cenarios/cenário3";
