@@ -27,6 +27,6 @@ describe("Test", () => {
     cy.contains("One").click();
     cy.contains("OptionThree").click();
     cy.get('#select_box').select('option_two')
-    cy.xpath("//img[@alt='selenium']").should("exist");
+    cy.xpath("//img[@alt='selenium']").should("be.visible");
   });
 });
