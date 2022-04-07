@@ -1,7 +1,7 @@
 Cypress.Commands.add("cenario2", () => {
   cy.visit("https://wj-qa-automation-test.github.io/qa-test/");
-  cy.get("#iframe_panel").iframe().get("#btn_one").click();
-  cy.get("#iframe_panel").iframe().get("#btn_two").click();
-  cy.get("#iframe_panel").iframe().get("#btn_link").click();
+  cy.click_button_iframe("#iframe_panel", "#btn_one")
+  cy.click_button_iframe("#iframe_panel", "#btn_two")
+  cy.click_button_iframe("#iframe_panel", "#btn_link")
   cy.verifica_botões();
 });
